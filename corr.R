@@ -22,3 +22,10 @@ corr <- function(directory, threshold = 0) {
         }
     return(results)
 }
+
+cr <- corr("specdata")
+cr <- sort(cr)
+RNGversion("3.5.1")
+set.seed(868)
+out <- round(cr[sample(length(cr), 5)], 4)
+print(out)

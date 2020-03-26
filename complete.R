@@ -1,6 +1,8 @@
 complete <- function(directory, id = 1:332) {
 	library(dplyr)
     path <- file.path(getwd(), directory, fsep = .Platform$file.sep)
+    print(path)
+    print(id)
     id_list <- c()
     nobs_list <- c()
 
@@ -27,7 +29,8 @@ complete <- function(directory, id = 1:332) {
 	}
 
     complete_obs <- data.frame(id = id_list, nobs = nobs_list)
-    print(complete_obs)
+    return(complete_obs)
 }
 
-complete('specdata')
+cr <- corr("specdata", 1000)
+print(length(cr))

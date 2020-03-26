@@ -22,7 +22,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
     scores <- data[pollutant][!bad]
     totals <- append(totals, scores, after = length(totals))
   }
-  mean(totals)
+  pmean <- mean(totals)
+  return(pmean)
 }
 
-pollutantmean('specdata', 'nitrate', 23)
