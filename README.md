@@ -1,7 +1,7 @@
 # JHU Data Science Specialization / R Programming / Programming Assigment #1
 R script for JHU 'R Programming' Week 2 Programming Assignment
 
-++Introduction++
++Introduction+
 For this first programming assignment you will write three functions that are meant to interact with dataset that accompanies this assignment. The dataset is contained in a zip file specdata.zip that you can download from the Coursera web site.
 
 ++Part 1 (pollutantmen.R)++
